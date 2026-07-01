@@ -1,0 +1,95 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+  <nav>
+    <h2>
+      <a href="https://encourageat.com">
+        {SITE_TITLE}
+      </a>
+    </h2>
+
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+
+    <div class="external-links">
+      <a
+        href="https://encourageat.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Main Website
+      </a>
+
+    <a href="mailto:encourageat@gmail.com">
+        encourageat@gmail.com
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+<style>
+	header {
+  margin: 0;
+  padding: 0 1.5rem;
+  background: white;
+  box-shadow: 0 2px 8px rgba(var(--black), 0.05);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+h2 a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.internal-links,
+.external-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+nav a {
+  padding: 1rem 0.4rem;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.active {
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .external-links {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 0.75rem;
+  }
+}
+</style>

@@ -1,0 +1,70 @@
+---
+const today = new Date();
+---
+
+<footer>
+  <div class="footer-links">
+	<p>Enterprise Identity & Access Management Consulting</p>
+    <a href="https://encourageat.com/consulting">
+      IAM Consulting
+    </a>
+
+    <a href="https://encourageat.com/training">
+      IAM Training
+    </a>
+
+    <a href="mailto:encourageat@gmail.com">
+      encourageat@gmail.com
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/george-v-thomas-79487887/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LinkedIn Profile
+    </a>
+  </div>
+
+  <div class="copyright">
+    © {today.getFullYear()} EncourageAt. All rights reserved.
+  </div>
+</footer>
+
+<style>
+footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+p {
+	color: green
+}
+
+.footer-links  a  {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+</style>
+
