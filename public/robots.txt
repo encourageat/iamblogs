@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://blog.encourageat.com/sitemap-index.xml
