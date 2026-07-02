@@ -3,7 +3,7 @@ title: "Customizing Auth0 with Actions and Triggers"
 description: "Learn how to customize Auth0 authentication flows using Actions and Triggers. This article demonstrates how to restrict application access to weekdays using a Post Login Action."
 author: "George V. Thomas"
 pubDate: 2026-07-01
-heroImage: '../../assets/blog-kc-observability.jpg'
+heroImage: '../../assets/blog-auth0-actions-triggers.jpg'
 tags:
   - Auth0
   - Actions
@@ -158,7 +158,10 @@ Then:
 1. Drag your Action into the flow.
 2. Click **Apply**.
 
-> **Screenshot:** Auth0 Post Login Trigger with the custom Action attached.
+<!-- IMAGE PLACEHOLDER: Grafana log view filtered by Keycloak instance.Diagram -->
+![Auth0 Post Login Trigger with the custom Action](../../assets/auth0-actions-triggers.jpg)
+
+> **Screenshot:** Auth0 Post Login Trigger with the custom Action.
 
 Once configured, the Action executes after every successful authentication.
 
