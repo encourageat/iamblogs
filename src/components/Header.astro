@@ -5,86 +5,120 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
   <nav>
+
     <h2>
-      <a href="https://encourageat.com">
-        {SITE_TITLE}
-      </a>
+      <a href="/">EncourageAt Blog</a>
     </h2>
 
-    <div class="internal-links">
+    <div class="menu">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href={`/about`}>About</HeaderLink>
-    </div>
+      <HeaderLink href="/about">About</HeaderLink>
 
-    <div class="external-links">
       <a
         href="https://encourageat.com"
         target="_blank"
         rel="noopener noreferrer"
+        class="home-link"
+        title="Go to EncourageAt"
       >
-        Main Website
+        <img src="/images/home.svg" alt="Home" />
       </a>
+
     </div>
+
   </nav>
 </header>
-
 <style>
-	header {
-  margin: 0;
-  padding: 0 1.5rem;
-  background: white;
-  box-shadow: 0 2px 8px rgba(var(--black), 0.05);
+header {
+        background: rgba(255,255,255,.95);
+    box-shadow: 0 2px 8px rgba(var(--black),0.05);
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
 
-h2 {
-  margin: 0;
-  font-size: 1.15rem;
-  font-weight: 700;
-}
+    max-width: 980px;
 
-h2 a {
-  color: darkblue;
-  text-decoration: none;
-}
+    margin: auto;
 
-.internal-links,
-.external-links {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
+    display: flex;
 
-nav a {
-  padding: 1rem 0.4rem;
-  color: var(--black);
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
-nav a.active {
-  border-bottom-color: var(--accent);
-}
-
-@media (max-width: 720px) {
-  nav {
-    flex-wrap: wrap;
-  }
-
-  .external-links {
-    width: 100%;
     justify-content: center;
-    padding-bottom: 0.75rem;
-  }
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: .9rem 1rem;
+}
+
+h2{
+    margin:0;
+    font-size:1.7rem;
+}
+
+h2 a{
+
+    color:#163a96;
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1.3rem;
+}
+
+.menu a{
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:1rem;
+}
+
+.home-link img{
+
+    width:22px;
+
+    height:22px;
+}
+@media (max-width:720px){
+
+    nav{
+
+        gap:.9rem;
+
+        padding:.8rem;
+    }
+
+    h2{
+
+        font-size:1.2rem;
+    }
+
+    .menu{
+
+        gap:.7rem;
+    }
+
+    .menu a{
+
+        font-size:.9rem;
+    }
+
+    .home-link img{
+
+        width:18px;
+
+        height:18px;
+    }
+
 }
 </style>
