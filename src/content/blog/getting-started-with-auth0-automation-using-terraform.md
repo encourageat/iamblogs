@@ -328,6 +328,7 @@ Benefits include:
 
 After learning the basics of the Auth0 Terraform Provider, you may also be interested in:
 
+- [Enterprise IAM Provisioning with Auth0, Terraform, Vault and MinIO](https://blog.encourageat.com/enterprise_auth0_terraform_vault_minio_guide/)
 - [Automating Auth0 Actions and Triggers with Terraform](https://blog.encourageat.com/automating-auth0-actions-and-triggers-with-terraform/)
 - [Customizing Auth0 with Actions and Triggers](https://blog.encourageat.com/customizing-auth0-with-actions-and-triggers/)
 - [Multi-Tenancy Using Organizations in Auth0](https://blog.encourageat.com/multi-tenancy-using-organizations-in-auth0/)
